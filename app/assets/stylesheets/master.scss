@@ -4,3 +4,20 @@
 .clear {
     clear: both;
 }
+
+.circle {
+    font-weight:bold;
+    font-style: italic;
+    position: relative;
+    border-radius: 100%;
+    background: #16a085;
+    border: 1px solid #34495e;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    text-align: center;
+    color: #34495e;
+    font-size: 13px;
+    line-height: 13px;
+    cursor: pointer;
+}
