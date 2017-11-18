@@ -34,8 +34,23 @@
     <hr />
     
     <br class="clear" />
+    <div class="container">
+      <%= yield %>
+    </div>
     
-    <%= yield %>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "More Quotes", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            It's a start...by <a href="http://jaredmahoney.getforge.io/index.html">Jared M.</a><br />
+            A plug for <a href="http://thefirehoseproject.com">The Firehose Project</a> - the great company that is teaching me to code.
+          </div>
+        </div>
+      </div>
+    </div>
     
   </body>
 </html>
