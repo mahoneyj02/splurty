@@ -11,22 +11,24 @@
   <body>
     <header class="row">
       <div class="col-3">
-        <div class="circle">
-          <br />
-          S
-          <br />
-          M
-          <br />
-          P
-          <br />
-          L
-        </div>
+        <%= link_to root_path, class: 'logo' do %>
+          <div class="circle">
+            <br />
+            S
+            <br />
+            M
+            <br />
+            P
+            <br />
+            L
+          </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Simplicity is beautiful but difficult to achieve. Let's see what great (and not so great) minds have to say about simplicity.
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
       </div>
     </header>
@@ -42,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "More Quotes", "#", class: 'next-quote' %>
+            <%= link_to "More Quotes", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             It's a start...by <a href="http://jaredmahoney.getforge.io/index.html">Jared M.</a><br />

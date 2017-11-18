@@ -20,6 +20,10 @@
     cursor: pointer;
 }
 
+.logo:hover {
+    text-decoration: none;
+}
+
 .slogan {
     font-family: 'playfair_displayregular', serif;
     font-style: italic;
@@ -41,6 +45,12 @@
     text-align: center;
     font-family: 'playfair_displayregular', serif;
     font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: none;
+    background: #16a085;
+    color: #fff;
 }
 
 .next-quote {
