@@ -7,17 +7,42 @@
 
 .circle {
     font-weight:bold;
-    font-style: italic;
     position: relative;
     border-radius: 100%;
     background: #16a085;
-    border: 1px solid #34495e;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     margin: 10px 10px;
     text-align: center;
-    color: #34495e;
-    font-size: 13px;
-    line-height: 13px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 15px;
     cursor: pointer;
+}
+
+.slogan {
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    font-style: italic;
+    padding: 26px 0 0 0;
+    color: #222;
+}
+
+.links {
+    padding: 26px 0 0 0;
+}
+
+.links a {
+    color: #222;
+    font-size: 25px;
+    border: 1px solid #16a085;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+header {
+    border-top: 9px solid #222;
+}
+
+hr {
+    clear: both;
 }
