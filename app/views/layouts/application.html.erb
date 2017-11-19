@@ -24,12 +24,13 @@
           </div>
         <% end %>
       </div>
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 hidden-xs-down slogan">
         Simplicity is beautiful but difficult to achieve. Let's see what great (and not so great) minds have to say about simplicity.
       </div>
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <!-- Button trigger modal -->
         <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+        &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
     </header>
@@ -46,8 +47,11 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :author %>
+              <br />
+              <%= f.input :saying, label: "What quote about simplicity would you like to add?", placeholder: "Simplicity makes me happy" %>
+              <br />
+              <%= f.input :author, label: "Who said it?", placeholder: "Alicia Keys" %>
+              <br />
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -73,10 +77,10 @@
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-sm-6">
             <%= link_to "More Quotes", root_path, class: 'next-quote' %>
           </div>
-          <div class="col-6 footer-blurb">
+          <div class="col-12 col-sm-6 footer-blurb">
             It's a start...by <a href="http://jaredmahoney.getforge.io/index.html">Jared M.</a><br />
             A plug for <a href="http://thefirehoseproject.com">The Firehose Project</a> - the great company that is teaching me to code.
           </div>
