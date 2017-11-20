@@ -18,3 +18,13 @@ body {
   height: 90px;
   background-color: #ddd;
 }
+
+@media (max-width: 750px) {
+  body {
+    margin-bottom: 110px;
+  }
+  
+  .footer {
+    height: 110px;
+  }
+}
