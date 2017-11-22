@@ -32,10 +32,13 @@
           Simplicity is beautiful but difficult to achieve. Let's see what great (and not so great) minds have to say about simplicity.
         </div>
         <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
+          <div class="link">
           <!-- Button trigger modal -->
-          <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
-          &nbsp;
-          <%= link_to 'About', about_path %>
+            <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+          </div>
+          <div class="link">
+            <%= link_to 'About', about_path %>
+          </div>
           <br />
         </div>
       </header>
@@ -71,7 +74,7 @@
     <hr />
     
     <br class="clear" />
-    <div class="container">
+    <div class="container main-content">
       <% if flash[:error].present? %>
         <div class="col-10 offset-1 alert alert-danger">
           <%= flash[:error].html_safe %>
@@ -79,6 +82,9 @@
       <% end %>
       <%= yield %>
     </div>
+    
+    <br />
+    <br />
     
     <div class="footer">
       <div class="container">

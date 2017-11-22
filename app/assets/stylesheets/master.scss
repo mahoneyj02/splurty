@@ -51,6 +51,11 @@
     text-decoration: none;
 }
 
+.link {
+    margin: 0 10px 20px 0;
+    float: right;
+}
+    
 .links a:hover {
     text-decoration: none;
     background: #16a085;
@@ -122,5 +127,9 @@ body {
     
     .links {
         margin: 0 0 10px 0;
+    }
+    
+    .main-content {
+        margin: 0 0 60px 0;
     }
 }
